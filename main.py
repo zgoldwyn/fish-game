@@ -33,6 +33,7 @@ def main():
         for event in pygame.event.get():
             if event.type == QUIT:
                 sys.exit()
+        move_fish()
         screen.fill((0, 127, 255))
         screen.blit(fish_image, fish_rect)
         pygame.display.flip()
